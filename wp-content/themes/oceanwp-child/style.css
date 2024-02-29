@@ -127,7 +127,7 @@ Version: 1.0
   }
 }
 
-/* MEDIA QUERY RESPONSIVE */
+/* MEDIA QUERY RESPONSIVE POUR LES FORMULAIRES */
 
 /* Media query pour passer les formulaires l'un en dessous de l'autre à partir de 976px */
 @media (max-width: 976px) {
@@ -208,6 +208,13 @@ Version: 1.0
 @media (min-width: 320px) and (max-width: 766px) {
   .elementor-image-gallery .conteneur-champs {
     width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .elementor-190
+    .elementor-element.elementor-element-7658303
+    .elementor-image-box-description {
+    padding: 20px;
   }
 }
 
@@ -296,7 +303,7 @@ input[type="number"] {
   .elementor-10
     .elementor-element.elementor-element-a404e15
     .elementor-heading-title {
-  font-size: 20px;
+    font-size: 20px;
   }
 }
 
@@ -309,9 +316,9 @@ input[type="number"] {
   color: black; /* Couleur du texte */
   text-decoration: none; /* Supprimer le soulignement */
   border: none; /* Supprimer les bordures */
-  margin-right:15px;
+  margin-right: 15px;
   text-decoration: none;
-  order:1;
+  order: 1;
 }
 
 .menu-item.menu-item-admin:hover {
@@ -319,40 +326,47 @@ input[type="number"] {
   text-decoration: none; /* Supprimer le soulignement au survol */
 }
 
+/*BOUTON COMMANDER*/
+
 #menu-item-75 {
   order: 2;
-    background-color: #DC9F96; /* Couleur de fond */
-    color: #FFFFFF; /* Couleur de la police */
+  background-color: #dc9f96; /* Couleur de fond */
 }
+
+#menu-item-75 a.hfe-menu-item {
+  color: white;
+}
+
+/* Media query pour changer la couleur du texte à une résolution spécifique */
+@media screen and (max-width: 766px) {
+  #menu-item-75 a.hfe-menu-item {
+    color: black;
+  }
+}
+
+/* BOUTON ADMIN */
 
 #wp-admin-bar-top-secondary {
   display: none;
 }
-#element.style{
-
+#element.style {
   background: border-box;
 }
 
-.elementor-771 .elementor-element.elementor-element-ef1bf62 .menu-item a.hfe-menu-item {
+.elementor-771
+  .elementor-element.elementor-element-ef1bf62.menu-item.current-menu-item
+  a.hfe-menu-item {
+  color: white;
+}
+
+.elementor-771
+  .elementor-element.elementor-element-ef1bf62
+  .menu-item
+  a.hfe-menu-item {
   background: border-box;
   margin-top: -3px;
 }
 
-.elementor-771 .elementor-element.elementor-element-ef1bf62 .menu-item.current-menu-item a.hfe-menu-item {
-  color:white;
-}
-
 a:hover {
-  color:black;
-}
-
-@media screen and (min-width: 320px) and (max-width: 766px){
-.elementor-771 .elementor-element.elementor-element-ef1bf62 .menu-item.current-menu-item a.hfe-menu-item{
-
   color: black;
-}
-}
-
-a.hfe-menu-item {
-  color: #FFFFFF;
 }
