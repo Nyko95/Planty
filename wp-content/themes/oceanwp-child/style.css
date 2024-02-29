@@ -9,3 +9,350 @@ Version: 1.0
 */
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
+/*formulaire de la page "nous contacter" */
+
+/*FORMULAIRE DE LA PAGE "NOUS CONTACTER"*/
+
+.wpcf7-form input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  background-color: #e0b9b4;
+  font-family: "Syne", sans-serif;
+  border-radius: 7px;
+}
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form textarea {
+  width: 100%; /* Largeur à 100% pour remplir le conteneur */
+  padding: 10px; /* Ajouter un espace intérieur autour des champs */
+  margin-bottom: 15px; /* Ajouter un espace entre les champs */
+  border: 1px solid #ccc;
+  color: #000;
+  background-color: #fff;
+  font-family: "Syne", sans-serif;
+  border-radius: 7px;
+}
+.wpcf7 label {
+  font-family: "Syne", sans-serif;
+}
+
+/*FORMULAIRE POUR TABLEAUX "VOS INFOS" ET "LIVRAISON"*/
+
+/* Conteneur pour les deux tableaux */
+.conteneur-tableaux {
+  display: flex;
+}
+
+/* Style des tableaux */
+.formulaire-vos-informations,
+.formulaire-livraison {
+  flex: 1; /* Les deux tableaux prennent une part égale de l'espace disponible */
+  margin-right: 94px; /* Marge à droite pour séparer les deux tableaux */
+}
+
+/* Style des champs de saisie de "Vos informations" */
+.formulaire-vos-informations input[type="text"],
+.formulaire-vos-informations input[type="email"] {
+  width: 383px;
+  height: 71px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+
+/* Style des champs de saisie de "Livraison" */
+.formulaire-livraison input[type="text"] {
+  width: 383px;
+  height: 71px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+/* Style des titres h2 */
+.formulaire-vos-informations h2,
+.formulaire-livraison h2 {
+  font-family: "Syne", sans-serif; /* Police de caractère */
+  font-size: 30px; /* Taille de police */
+  font-weight: 700; /* Poids de la police */
+  line-height: 36px; /* Hauteur de ligne */
+  letter-spacing: 0em; /* Espacement des lettres */
+  text-align: left; /* Alignement du texte à gauche */
+  height: 36px;
+  color: #ffffff;
+  margin-top: 50px;
+}
+
+.formulaire-vos-informations label,
+.formulaire-livraison label {
+  width: 44px; /* Largeur des champs de saisie */
+  height: 24px; /* Hauteur des champs de saisie */
+  font-family: "Syne", sans-serif; /* Police de caractère */
+  font-size: 20px; /* Taille de police */
+  font-weight: 400; /* Poids de la police */
+  line-height: 24px; /* Hauteur de ligne */
+  letter-spacing: 0em; /* Espacement des lettres */
+  text-align: left; /* Alignement du texte à gauche */
+  color: white;
+}
+
+/* Style de la ligne verticale qui sépare les deux formulaires */
+.ligne-verticale {
+  width: 1px;
+  height: 447px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+}
+
+/* Style du bouton "Commander" */
+.bouton-commander input[type="submit"] {
+  width: 198px; /* Largeur du bouton */
+  height: 55px; /* Hauteur du bouton */
+  border-radius: 5px; /* Rayon de bordure */
+}
+
+/* Code pour masquer les éléments en format tablette et mobile */
+
+@media (max-width: 770px) {
+  .elementor-190
+    .elementor-element.elementor-element-6bc0812.elementor-element {
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .elementor-190
+    .elementor-element.elementor-element-864d0b9.elementor-element {
+    display: none;
+  }
+}
+
+/* MEDIA QUERY RESPONSIVE */
+
+/* Media query pour passer les formulaires l'un en dessous de l'autre à partir de 976px */
+@media (max-width: 976px) {
+  .conteneur-tableaux {
+    display: block; /* Passage à un affichage en bloc */
+    text-align: center; /* Centrage horizontal des formulaires */
+    max-width: 100%;
+  }
+}
+
+.formulaire-vos-informations,
+.formulaire-livraison {
+  width: 80%; /* Largeur réduite pour les formulaires */
+  margin: 0 auto 20px; /* Centre les formulaires et ajoute une marge en bas */
+}
+
+.ligne-verticale {
+  display: none; /* Masque la ligne verticale */
+}
+
+/* Centrage des titres */
+.formulaire-vos-informations h2,
+.formulaire-livraison h2 {
+  text-align: center;
+  /* Centrage horizontal des titres */
+  font-size: 25px;
+}
+
+/* Media query pour réduire la taille des champs entre 320px et 440px */
+@media (min-width: 320px) and (max-width: 440px) {
+  .formulaire-vos-informations input[type="text"],
+  .formulaire-vos-informations input[type="email"],
+  .formulaire-livraison input[type="text"] {
+    width: 200px; /* Réduire la largeur des champs */
+    height: auto; /* Permettre à la hauteur de s'ajuster automatiquement */
+    margin-bottom: 10px; /* Réduire l'espacement entre les champs */
+  }
+}
+
+/* Media query pour ajuster la taille des titres entre 320px et 766px */
+@media (min-width: 320px) and (max-width: 766px) {
+  .elementor-13
+    .elementor-element.elementor-element-a7d0b27
+    .elementor-heading-title {
+    font-size: 24px; /* Taille de police réduite */
+  }
+}
+
+@media (min-width: 320px) and (max-width: 766px) {
+  .elementor-13
+    .elementor-element.elementor-element-6498e93
+    .elementor-heading-title {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 766px) {
+  .elementor-190
+    .elementor-element.elementor-element-ab0e45e
+    .elementor-heading-title {
+    text-align: center;
+    /* Centrage horizontal des titres */
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 766px) {
+  .elementor-10
+    .elementor-element.elementor-element-c853e57
+    .elementor-heading-title {
+    text-align: center;
+    /* Centrage horizontal des titres */
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 766px) {
+  .elementor-image-gallery .conteneur-champs {
+    width: 100%;
+  }
+}
+
+/*FORMULAIRE DE COMMANDE*/
+
+/* Conteneur principal des images et des champs de quantité */
+.conteneur-image {
+  display: flex;
+  justify-content: center; /* Centre les éléments horizontalement */
+}
+
+/* Conteneur pour chaque paire image-champ de quantité */
+.image-quantite-pair {
+  margin: auto;
+}
+
+/* Style des images */
+.image-quantite-pair img {
+  width: 193.21px;
+  height: 128.97px;
+}
+
+/* Style des champs de quantité */
+.quantite-input {
+  width: 56px;
+  height: 39px;
+  margin-top: 10px; /* Espace entre l'image et le champ de quantité */
+  background-color: #ffffff; /* Fond blanc */
+}
+
+.conteneur-champs input[type="number"] {
+  background-color: #ffffff;
+}
+
+.elementor-element.elementor-element-6c1fb49.elementor-widget.elementor-widget-shortcode {
+  width: 100%;
+}
+
+.conteneur-image {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+}
+
+/* Média query pour la version mobile du FORMULAIRE DE COMMANDE */
+
+@media screen and (max-width: 767px) {
+  /* Réduire la largeur des champs de quantité pour la version mobile */
+  .quantite-input {
+    width: 30px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 766px) {
+  .conteneur-image {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+
+/*cases nombres de la pages "commander */
+
+/* Conteneur pour les champs de saisie de nombres */
+.conteneur-champs {
+  display: flex; /* Utilisation de flexbox */
+  justify-content: space-around; /* Espacement égal autour des champs */
+}
+
+/* Style des champs de saisie de nombres */
+input[type="number"] {
+  width: 39px; /* Largeur fixe des champs de saisie */
+  height: 56px; /* Hauteur des champs de saisie */
+  text-align: center; /* Centrer le texte à l'intérieur des champs de saisie */
+}
+
+.elementor-widget-container h1 {
+  margin-left: 40px;
+}
+
+.elementor-widget-container p {
+  margin-left: 25px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 766px) {
+  .elementor-10
+    .elementor-element.elementor-element-a404e15
+    .elementor-heading-title {
+  font-size: 20px;
+  }
+}
+
+/*style pour le HOOK*/
+
+.menu-item.menu-item-admin {
+  display: flex;
+  align-items: center;
+  font-family: "Syne", sans-serif;
+  color: black; /* Couleur du texte */
+  text-decoration: none; /* Supprimer le soulignement */
+  border: none; /* Supprimer les bordures */
+  margin-right:15px;
+  text-decoration: none;
+  order:1;
+}
+
+.menu-item.menu-item-admin:hover {
+  color: black; /* Couleur du texte au survol */
+  text-decoration: none; /* Supprimer le soulignement au survol */
+}
+
+#menu-item-75 {
+  order: 2;
+    background-color: #DC9F96; /* Couleur de fond */
+    color: #FFFFFF; /* Couleur de la police */
+}
+
+#wp-admin-bar-top-secondary {
+  display: none;
+}
+#element.style{
+
+  background: border-box;
+}
+
+.elementor-771 .elementor-element.elementor-element-ef1bf62 .menu-item a.hfe-menu-item {
+  background: border-box;
+  margin-top: -3px;
+}
+
+.elementor-771 .elementor-element.elementor-element-ef1bf62 .menu-item.current-menu-item a.hfe-menu-item {
+  color:white;
+}
+
+a:hover {
+  color:black;
+}
+
+@media screen and (min-width: 320px) and (max-width: 766px){
+.elementor-771 .elementor-element.elementor-element-ef1bf62 .menu-item.current-menu-item a.hfe-menu-item{
+
+  color: black;
+}
+}
+
+a.hfe-menu-item {
+  color: #FFFFFF;
+}
